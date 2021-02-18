@@ -38,14 +38,18 @@ export class MemberDetailComponent implements OnInit {
 
     const imageURLs = [];
     for(const photo of this.member.photos){
+
       imageURLs.push({
         small : photo?.url,
         medium : photo?.url,
         big : photo?.url
       })
+      console.log(imageURLs.length);
 
-      return imageURLs;
+
     }
+
+    return imageURLs;
 
   }
 
@@ -54,6 +58,7 @@ export class MemberDetailComponent implements OnInit {
       member => {
         this.member = member;
         this.galleryImages = this.getImages();
+
       },
       error => {
         console.log(error);
