@@ -44,7 +44,7 @@ export class MemberDetailComponent implements OnInit {
         medium : photo?.url,
         big : photo?.url
       })
-      console.log(imageURLs.length);
+      //console.log(imageURLs.length);
 
 
     }
