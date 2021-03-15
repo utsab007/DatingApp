@@ -15,6 +15,7 @@ export class NavComponent implements OnInit {
   model: any = {};
 
   currentUser$: Observable<User>;
+  userRoles : string[];
 
   constructor(private accountService: AccountService, private router: Router,
     private toastr: ToastrService) { }
